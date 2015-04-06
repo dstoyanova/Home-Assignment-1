@@ -14,6 +14,11 @@
 		C328D2F71AC4207E00593997 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C328D2F61AC4207E00593997 /* Images.xcassets */; };
 		C328D2FA1AC4207E00593997 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C328D2F81AC4207E00593997 /* LaunchScreen.xib */; };
 		C328D3061AC4207E00593997 /* Homework1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C328D3051AC4207E00593997 /* Homework1Tests.m */; };
+		C328D3141AC423CC00593997 /* MMAProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = C328D3131AC423CC00593997 /* MMAProduct.m */; };
+		C328D3171AC424E800593997 /* MMASoup.m in Sources */ = {isa = PBXBuildFile; fileRef = C328D3161AC424E800593997 /* MMASoup.m */; };
+		C328D31A1AC4257900593997 /* MMAMainDish.m in Sources */ = {isa = PBXBuildFile; fileRef = C328D3191AC4257900593997 /* MMAMainDish.m */; };
+		C328D31D1AC425F600593997 /* MMADessert.m in Sources */ = {isa = PBXBuildFile; fileRef = C328D31C1AC425F600593997 /* MMADessert.m */; };
+		C328D3201AC426B800593997 /* MMACoke.m in Sources */ = {isa = PBXBuildFile; fileRef = C328D31F1AC426B800593997 /* MMACoke.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		C328D2FF1AC4207E00593997 /* Homework1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Homework1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C328D3041AC4207E00593997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C328D3051AC4207E00593997 /* Homework1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Homework1Tests.m; sourceTree = "<group>"; };
+		C328D3121AC423CC00593997 /* MMAProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAProduct.h; sourceTree = "<group>"; };
+		C328D3131AC423CC00593997 /* MMAProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAProduct.m; sourceTree = "<group>"; };
+		C328D3151AC424E800593997 /* MMASoup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMASoup.h; sourceTree = "<group>"; };
+		C328D3161AC424E800593997 /* MMASoup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMASoup.m; sourceTree = "<group>"; };
+		C328D3181AC4257900593997 /* MMAMainDish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAMainDish.h; sourceTree = "<group>"; };
+		C328D3191AC4257900593997 /* MMAMainDish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAMainDish.m; sourceTree = "<group>"; };
+		C328D31B1AC425F600593997 /* MMADessert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMADessert.h; sourceTree = "<group>"; };
+		C328D31C1AC425F600593997 /* MMADessert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMADessert.m; sourceTree = "<group>"; };
+		C328D31E1AC426B800593997 /* MMACoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMACoke.h; sourceTree = "<group>"; };
+		C328D31F1AC426B800593997 /* MMACoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMACoke.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +104,16 @@
 				C328D2F61AC4207E00593997 /* Images.xcassets */,
 				C328D2F81AC4207E00593997 /* LaunchScreen.xib */,
 				C328D2E91AC4207E00593997 /* Supporting Files */,
+				C328D3121AC423CC00593997 /* MMAProduct.h */,
+				C328D3131AC423CC00593997 /* MMAProduct.m */,
+				C328D3151AC424E800593997 /* MMASoup.h */,
+				C328D3161AC424E800593997 /* MMASoup.m */,
+				C328D3181AC4257900593997 /* MMAMainDish.h */,
+				C328D3191AC4257900593997 /* MMAMainDish.m */,
+				C328D31B1AC425F600593997 /* MMADessert.h */,
+				C328D31C1AC425F600593997 /* MMADessert.m */,
+				C328D31E1AC426B800593997 /* MMACoke.h */,
+				C328D31F1AC426B800593997 /* MMACoke.m */,
 			);
 			path = Homework1;
 			sourceTree = "<group>";
@@ -163,6 +188,7 @@
 		C328D2DE1AC4207E00593997 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MMA;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = Student22;
 				TargetAttributes = {
@@ -220,8 +246,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C328D2F21AC4207E00593997 /* ViewController.m in Sources */,
+				C328D3201AC426B800593997 /* MMACoke.m in Sources */,
 				C328D2EF1AC4207E00593997 /* AppDelegate.m in Sources */,
+				C328D31A1AC4257900593997 /* MMAMainDish.m in Sources */,
+				C328D3171AC424E800593997 /* MMASoup.m in Sources */,
 				C328D2EC1AC4207E00593997 /* main.m in Sources */,
+				C328D31D1AC425F600593997 /* MMADessert.m in Sources */,
+				C328D3141AC423CC00593997 /* MMAProduct.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
